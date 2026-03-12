@@ -599,12 +599,17 @@ a {
         width: 100%;
     }
     
+    .action-box {
+        padding: 3rem 1.5rem;
+    }
+    
     .action-buttons-large {
         flex-direction: column;
     }
     
     .btn-large {
         width: 100%;
+        min-width: 0;
     }
     
     .footer-content {
