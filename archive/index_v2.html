@@ -3,23 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UVAS Elections - Lead the Society</title>
+    <title>UVAS Elections - Review & Nominate</title>
     <!-- Modern Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_v2.css">
 </head>
 <body>
 
     <header class="header">
         <div class="container header-inner">
-            <a href="#top" class="brand-link">
-                <!-- Extremely prominent logo -->
-                <img src="Logos/Side Stack/AccountingSociety-SideStack-Green.svg" alt="UVAS Logo" class="brand-logo">
-            </a>
+            <img src="Logos/Side Stack/AccountingSociety-SideStack-Green.svg" alt="UVAS Logo" class="brand-logo">
             <div class="header-actions">
-                <a href="#about" class="nav-link">About UVAS</a>
                 <a href="#roles" class="nav-link">Officer Roles</a>
                 <a href="#action" class="btn btn-primary btn-sm">Submit Candidacy</a>
             </div>
@@ -27,23 +23,22 @@
     </header>
 
     <main>
-        <!-- Welcome Hero with BG Image (164.jpg - Wrestling Event) -->
-        <section class="hero-section" id="top">
-            <div class="hero-overlay"></div>
-            <div class="container hero-container relative-z">
+        <!-- Welcome Hero - Focus: Action -->
+        <section class="hero-section">
+            <div class="container hero-container">
                 <div class="hero-content">
                     <span class="badge">Utah Valley University</span>
                     <h1 class="hero-title">Step up and lead the Accounting Society.</h1>
-                    <p class="hero-subtitle">The window to review officer roles and submit your candidacy for the 2026-2027 academic year is now open. Help organize the premier events of the semester.</p>
+                    <p class="hero-subtitle">The window to review officer roles and submit your candidacy for the upcoming semester is now open. Elections will follow shortly after.</p>
                     <div class="hero-button-group">
-                        <a href="#about" class="btn btn-secondary">Why Join Leadership?</a>
+                        <a href="#roles" class="btn btn-secondary">Review Open Roles</a>
                         <a href="#action" class="btn btn-primary">Take Action &rarr;</a>
                     </div>
                 </div>
-                <!-- Status Card in Hero -->
                 <div class="hero-graphic">
+                    <!-- A stylized timeline or stat block to draw the eye nicely without clutter -->
                     <div class="status-card">
-                        <h3>Election Timeline</h3>
+                        <h3>Election Status</h3>
                         <div class="status-step active">
                             <span class="step-num">1</span>
                             <div class="step-info">
@@ -70,55 +65,16 @@
             </div>
         </section>
 
-        <!-- Promoted About Section with Inline Image (403.jpg - Student Life) -->
-        <section id="about" class="about-section">
-            <div class="container">
-                <div class="about-grid">
-                    <div class="about-text">
-                        <h2>Why Join UVAS Leadership?</h2>
-                        <p class="lead-text">The Utah Valley Accounting Society connects students with the profession, facilitating firm visits, networking, and resume recruitment.</p>
-                        
-                        <div class="benefits-list">
-                            <div class="benefit-item">
-                                <div class="benefit-icon">🏢</div>
-                                <div>
-                                    <strong>Direct Firm Networking</strong>
-                                    <p>Build relationships through event coordination and firm visits.</p>
-                                </div>
-                            </div>
-                            <div class="benefit-item">
-                                <div class="benefit-icon">🤝</div>
-                                <div>
-                                    <strong>Professional Engagement</strong>
-                                    <p>Work directly with the UACPA and the AICPA representing UVU.</p>
-                                </div>
-                            </div>
-                            <div class="benefit-item">
-                                <div class="benefit-icon">📈</div>
-                                <div>
-                                    <strong>Resume Experience</strong>
-                                    <p>Demonstrate initiative, leadership, and organization skills to employers.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-image-wrapper">
-                        <img src="20250917_Meet the Firms_KE_0403.jpg" alt="UVAS Students Networking" class="about-image">
-                        <div class="image-accent"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Roles Section -->
+        <!-- Roles Section - Focus: Descriptions -->
         <section id="roles" class="roles-section">
             <div class="container">
                 <div class="section-header">
-                    <h2>Available Officer Positions</h2>
-                    <p>Elected officers are expected to serve for at least one semester. Review the core responsibilities below.</p>
+                    <h2>Elected Officer Positions</h2>
+                    <p>Select a position below to understand its core responsibilities before you nominate yourself. Elected officers are expected to serve for at least one semester.</p>
                 </div>
 
                 <div class="roles-grid">
+                    <!-- Card 1 -->
                     <div class="role-card">
                         <div class="role-icon">📅</div>
                         <h3 class="role-title">Events Officer</h3>
@@ -129,15 +85,17 @@
                         </ul>
                     </div>
 
+                    <!-- Card 2 -->
                     <div class="role-card">
                         <div class="role-icon">🎯</div>
                         <h3 class="role-title">Activities Officer</h3>
                         <ul class="role-duties">
                             <li>Lead a team of 1-2 students.</li>
-                            <li>Schedule logistics for bi-weekly presentations, open houses, and class visits.</li>
+                            <li>Schedule and logically manage bi-weekly presentations, open houses, and class visits.</li>
                         </ul>
                     </div>
 
+                    <!-- Card 3 -->
                     <div class="role-card">
                         <div class="role-icon">🤝</div>
                         <h3 class="role-title">Firm Relations Officer</h3>
@@ -147,25 +105,29 @@
                         </ul>
                     </div>
 
+                    <!-- Card 4 -->
                     <div class="role-card">
                         <div class="role-icon">🏢</div>
-                        <h3 class="role-title">CAS & Industry Relations</h3>
+                        <h3 class="role-title">CAS & Industry Relations Officer</h3>
                         <ul class="role-duties">
                             <li>Connect industry organizations with UVU students.</li>
                             <li>Collaborate with David Waite to develop industry relationships.</li>
-                            <li>Manage communications and follow-ups with industry/gov orgs.</li>
+                            <li>Manage communications and follow-ups with industry/government orgs.</li>
                         </ul>
                     </div>
 
+                    <!-- Card 5 -->
                     <div class="role-card">
                         <div class="role-icon">📣</div>
-                        <h3 class="role-title">Student & Faculty Relations</h3>
+                        <h3 class="role-title">Student & Faculty Relations Officer</h3>
                         <ul class="role-duties">
+                            <li>Lead a team of 1-2 students.</li>
                             <li>Distribute event info to students and faculty.</li>
                             <li>Update display screens, elevators, and maintain the public UVAS calendar.</li>
                         </ul>
                     </div>
 
+                    <!-- Card 6 -->
                     <div class="role-card">
                         <div class="role-icon">🏆</div>
                         <h3 class="role-title">Competitions Officer</h3>
@@ -175,6 +137,7 @@
                         </ul>
                     </div>
 
+                    <!-- Card 7 -->
                     <div class="role-card">
                         <div class="role-icon">📚</div>
                         <h3 class="role-title">Historian</h3>
@@ -188,19 +151,19 @@
             </div>
         </section>
 
-        <!-- Massive Action Section -->
+        <!-- Action Section - Focus: Action Items -->
         <section id="action" class="action-section">
             <div class="container action-container">
                 <div class="action-box">
                     <h2>Ready to get involved?</h2>
-                    <p>Follow the links below to participate in the upcoming election cycle.</p>
+                    <p>Serving as a UVAS officer is unparalleled resume experience that connects you directly with employers. Follow the links below to participate.</p>
                     
                     <div class="action-buttons-large">
-                        <a href="https://forms.cloud.microsoft/r/3dwcj3B3wR" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">
+                        <a href="YOUR_NOMINATION_FORM_LINK" class="btn btn-primary btn-large">
                             <span class="btn-title">Submit Candidacy</span>
                             <span class="btn-desc">Nominate yourself before March 27</span>
                         </a>
-                        <a href="javascript:void(0)" class="btn btn-disabled btn-large">
+                        <a href="YOUR_VOTING_FORM_LINK" class="btn btn-outline btn-large">
                             <span class="btn-title">Vote for Officers</span>
                             <span class="btn-desc">Voting opens after nominations close</span>
                         </a>
@@ -210,12 +173,32 @@
             </div>
         </section>
 
+        <!-- Reduced About Section - Moved to bottom because it's secondary -->
+        <section class="about-section">
+            <div class="container">
+                <div class="about-grid">
+                    <div>
+                        <h2>About UVAS</h2>
+                        <p>The Utah Valley Accounting Society connects students with the profession, facilitating firm visits, networking, and resume recruitment. We work closely with the UACPA and AICPA to build your career network.</p>
+                    </div>
+                    <div>
+                        <h3>Why Join Leadership?</h3>
+                        <ul>
+                            <li>Direct networking with top firms</li>
+                            <li>Leadership experience for your resume</li>
+                            <li>Department involvement and impact</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer class="footer">
         <div class="container footer-content">
             <div class="footer-brand">
-                <img src="Logos/Side Stack/AccountingSociety-SideStack-White.svg" alt="UVAS Logo" style="width: 240px; opacity: 0.9;">
+                <img src="Logos/Side Stack/AccountingSociety-SideStack-Green.svg" alt="UVAS Logo" style="width: 200px; filter: brightness(0) invert(1); opacity: 0.8;">
             </div>
             <div class="footer-contact">
                 <strong>Questions? Contact Faculty Advisors:</strong><br>
