@@ -1,54 +1,48 @@
-# UVAS Elections Website (GitHub Pages)
+# UVAS Elections Website (Vercel)
 
-This repository contains a simple static website for UVAS elections, designed to host directly on GitHub Pages.
+This repository contains a modern, conversion-focused static website for UVAS elections, optimized for free hosting on Vercel.
 
-## Files
+## Project Files
 
-- `index.html` - page content and editable text
-- `styles.css` - visual design and responsive layout
+- `index.html` - Page content, UI structure, and Vercel Analytics script.
+- `styles.css` - Visual design, typography, grid layouts, and responsive queries.
+- `archive/` - Folder containing previous design iterations (V1 and V2) for historical reference.
+- `20250917_Meet the Firms_KE_*.jpg` - Official event photography used throughout the layout.
 
-## 1) Replace Microsoft Forms Links
+## 1) Editable Action Links
 
-Open `index.html` and replace all instances of:
+Open `index.html` to update the call-to-action buttons in the bottom section. 
+Currently:
+- **Nomination Form:** Links to the active Microsoft Form.
+- **Voting Form:** Styled with a `.btn-disabled` class and an inactive href (`javascript:void(0)`) since voting is not open yet. Once voting opens, update the URL and delete the `btn-disabled` class to make it green and clickable.
 
-- `YOUR_NOMINATION_FORM_LINK`
-- `YOUR_VOTING_FORM_LINK`
+## 2) Edit Content Sections
 
-They appear in the hero buttons and the bottom call-to-action buttons.
+In `index.html`, content is organized logically into semantic sections:
 
-## 2) Edit Officer Descriptions
+- **Hero (`#top`):** The primary call to action, timeline status card, and background image integration. Update the academic year (e.g. 2026-2027) inside the subtitle `<p>`.
+- **About (`#about`):** The value proposition and benefits list, paired with an inline event photo.
+- **Roles (`#roles`):** Each position is a `<div class="role-card">...</div>` block. You can safely edit the `<h3>` titles and `<ul>` duties without breaking the grid structure.
 
-In `index.html`, go to the `Officer Positions` section (`id="positions"`).
+## 3) Analytics Integration
 
-Each position is a `<article class="card">...</article>` block.
-You can edit:
+The website implements official Vercel Analytics for tracking visits. Because this is a static HTML site without a build framework, it uses a script tag injected directly into the `<head>` of `index.html`:
+`<script defer src="/_vercel/insights/script.js"></script>`
 
-- the title in `<h3>`
-- the responsibilities in the `<ul><li>...</li></ul>` list
+You **do not** need to install any `npm` packages. Vercel automatically powers this script when the site is deployed.
 
-## 3) Update Election Dates
+## 4) Publish on Vercel
 
-In `index.html`, go to the `Election Timeline` section (`id="timeline"`).
-Update the text in each `<p class="date">...</p>`.
+1. Log into your account at [Vercel.com](https://vercel.com).
+2. Click **Add New Project**.
+3. Import this GitHub repository (`uvas_elections_site`).
+4. Leave all settings default (Framework preset: `Other`, Build Command: `None`).
+5. Click **Deploy**.
 
-Current placeholders:
-
-- Interest deadline: March 27
-- Voting deadline: April 4
-- Announcement: April 14
-
-## 4) Publish on GitHub Pages
-
-1. Push this repository to GitHub.
-2. In GitHub, go to `Settings` -> `Pages`.
-3. Under `Build and deployment`, choose:
-   - `Source`: `Deploy from a branch`
-   - `Branch`: `main` (or your default branch), folder `/ (root)`
-4. Save.
-5. GitHub will provide your live site URL.
+Moving forward, simply running `git push` from your terminal will trigger Vercel to automatically rebuild and update your live URL within seconds!
 
 ## Notes
 
 - The site is fully static (no backend/database required).
-- The logo is loaded from `Logos/Side Stack/AccountingSociety-SideStack-Green.svg`.
-- If your forms require authentication, keep the on-page login note.
+- The hero section uses `20250917_Meet the Firms_KE_0164.jpg` as the background natively mapped inside `styles.css`.
+- If your forms require Microsoft authentication, keep the on-page login note in the HTML.
